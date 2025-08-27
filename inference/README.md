@@ -23,7 +23,7 @@ export BUCKET_NAME="your-unique-bucket-name-here"
 export BUCKET_URI="gs://${BUCKET_NAME}"
 export HF_TOKEN="hf_your_hugging_face_read_token"
 export BASE_MODEL_ID="deepseek-ai/DeepSeek-R1-Distill-Llama-70B"
-export LORA_ADAPTER_GCS_PATH="${BUCKET_URI}/loras/heidi-fast-v1p1-original"
+export LORA_ADAPTER_GCS_PATH="${BUCKET_URI}/adaptors/custom-adaptor"
 ```
 
 AUTH:
