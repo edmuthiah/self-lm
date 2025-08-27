@@ -18,8 +18,8 @@ except KeyError as e:
 
 aiplatform.init(project=PROJECT_ID, location=REGION, staging_bucket=BUCKET_URI)
 
-machine_type = "a3-highgpu-8g"
-accelerator_type = "NVIDIA_H100_80GB"
+machine_type = "a3-ultragpu-8g"
+accelerator_type = "NVIDIA_H200_141GB"
 accelerator_count = 8
 serving_container_image_uri = "us-docker.pkg.dev/vertex-ai/vertex-vision-model-garden-dockers/pytorch-vllm-serve:20250506_0916_RC01"
 
@@ -64,7 +64,7 @@ instance = {
     "max_tokens": 1024,
     "temperature": 0.2,
     "lora_request": {
-        "lora_adapter_name": "heidi-adapter",
+        "lora_adapter_name": "custom-adapter",
         "lora_adapter_id": LORA_ADAPTER_GCS_PATH,
     }
 }
