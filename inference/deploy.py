@@ -18,9 +18,9 @@ except KeyError as e:
 
 aiplatform.init(project=PROJECT_ID, location=REGION, staging_bucket=BUCKET_URI)
 
-machine_type = "a3-highgpu-4g"
+machine_type = "a3-highgpu-8g"
 accelerator_type = "NVIDIA_H100_80GB"
-accelerator_count = 4
+accelerator_count = 8
 serving_container_image_uri = "us-docker.pkg.dev/vertex-ai/vertex-vision-model-garden-dockers/pytorch-vllm-serve:20250506_0916_RC01"
 
 vllm_args = [

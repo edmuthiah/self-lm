@@ -75,3 +75,9 @@ gsutil -m cp -r ./deepseek-r1-70b-local "${BUCKET_URI}/models/"
 ```python
 python3 deploy.py
 ```
+
+### Delete
+```bash
+gcloud ai endpoints delete YOUR_ENDPOINT_ID --region=$REGION --quiet
+gcloud ai models delete YOUR_MODEL_ID --region=$REGION --quiet
+```
