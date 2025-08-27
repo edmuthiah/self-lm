@@ -1,6 +1,7 @@
 # DeepSeek R1 + LoRA on Vertex AI
 
-Guide to set up your GCP to deploy `deepseek-ai/DeepSeek-R1-Distill-Llama-70B` model with a LoRA adapter. Note you may need to raise QIR for sufficient GPUs.
+Guide to set up your GCP to deploy `deepseek-ai/DeepSeek-R1-Distill-Llama-70B` model with a LoRA adapter. Note you may need to raise QIR for sufficient GPUs:
+http://console.cloud.google.com/iam-admin/quotas?location=us-central1&metric=aiplatform.googleapis.com%2Fcustom_model_serving_nvidia_h200_gpus&project=[YOUR_PROJECT_NAME_HERE]
 
 ---
 
